@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/yuanjiaoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="圆角" />
+
+        <Button
+            android:id="@+id/yuanxingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="圆形" />
+
+        <Button
+            android:id="@+id/biliButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="比例1：2" />
+
+        <Button
+            android:id="@+id/jianjinButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="渐进式" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cipanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="磁盘缓存" />
+
+        <Button
+            android:id="@+id/donghuaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="加载动图" />
+
+        <Button
+            android:id="@+id/jiantingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="加载监听" />
+
+        <Button
+            android:id="@+id/peizhiButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="配置OKHTTP" />
+    </LinearLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/yuanjiao"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        fresco:roundedCornerRadius="10dp"
+        android:layout_margin="10dp"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/yuanxing"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        fresco:roundAsCircle="true"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/bili"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        fresco:viewAspectRatio="2"
+        android:layout_gravity="center"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/jianjin"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/cipan"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/donghua"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/jianting"
+        fresco:fadeDuration="300"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/peizhi"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+</LinearLayout>
